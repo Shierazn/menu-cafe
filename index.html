@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafe Senja - Menu Digital</title>
+    <!-- Menghubungkan file CSS eksternal untuk styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / BAGIAN ATAS KAFE -->
+    <header class="header">
+        <h1>☕ Kafe Senja</h1>
+        <p>Silakan pilih menu favoritmu di bawah ini</p>
+    </header>
+
+    <!-- KOTAK PENCARIAN (SEARCH BAR) -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Cari menu favoritmu...">
+    </div>
+
+    <!-- TOMBOL FILTER KATEGORI -->
+    <nav class="category-nav">
+        <button class="filter-btn active" data-category="all">Semua</button>
+        <button class="filter-btn" data-category="makanan">Makanan</button>
+        <button class="filter-btn" data-category="minuman">Minuman</button>
+    </nav>
+
+    <!-- DAFTAR MENU UTAMA -->
+    <main class="menu-container">
+
+        <!-- Item Menu 1: Makanan -->
+        <div class="menu-card" data-category="makanan">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" alt="Burger Sapi">
+            <div class="menu-info">
+                <h3>Burger Spesial Senja</h3>
+                <p class="description">Burger daging sapi juicy dengan keju leleh dan saus spesial.</p>
+                <span class="price">Rp 35.000</span>
+                <button class="order-btn">Pesan</button>
+            </div>
+        </div>
+
+        <!-- Item Menu 2: Makanan -->
+        <div class="menu-card" data-category="makanan">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500" alt="Pizza">
+            <div class="menu-info">
+                <h3>Pizza Margherita</h3>
+                <p class="description">Pizza tipis dengan saus tomat segar, keju mozzarella, dan daun basil.</p>
+                <span class="price">Rp 45.000</span>
+                <button class="order-btn">Pesan</button>
+            </div>
+        </div>
+
+        <!-- Item Menu 3: Minuman -->
+        <div class="menu-card" data-category="minuman">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500" alt="Kopi Latte">
+            <div class="menu-info">
+                <h3>Caramel Macchiato</h3>
+                <p class="description">Espresso segar berpadu susu lembut dengan sirup karamel manis.</p>
+                <span class="price">Rp 25.000</span>
+                <button class="order-btn">Pesan</button>
+            </div>
+        </div>
+
+        <!-- Item Menu 4: Minuman -->
+        <div class="menu-card" data-category="minuman">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500" alt="Es Teh Lemon">
+            <div class="menu-info">
+                <h3>Ice Lemon Tea</h3>
+                <p class="description">Teh hitam pilihan dengan perasan jeruk lemon segar dan es batu.</p>
+                <span class="price">Rp 15.000</span>
+                <button class="order-btn">Pesan</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER / BAGIAN BAWAH -->
+    <footer class="footer">
+        <p>&copy; 2026 Kafe Senja. Dibuat dengan ❤️ untuk kemudahan pelanggan.</p>
+    </footer>
+
+    <!-- Menghubungkan file JavaScript eksternal untuk interaktivitas -->
+    <script src="script.js"></script>
+</body>
+</html>
